@@ -1,36 +1,20 @@
 package model;
 
-public class CompteEpargne extends Compte {
-    private double tauxInteret; // e.g., 0.03 for 3%
+public class Retrait extends Operation {
+    private String destination;
 
-    public CompteEpargne(String code, double initialSolde, double tauxInteret) {
-        super(code, initialSolde);
-        if (tauxInteret < 0) throw new IllegalArgumentException("Taux d'intérêt doit être >= 0");
-        this.tauxInteret = tauxInteret;
+    public Retrait(double montant, String destination) {
+        super(montant);
+        this.destination = destination;
     }
 
-    public double getTauxInteret() {
-        return tauxInteret;
-    }
+    public String getDestination() { return destination; }
 
     @Override
-    public void retirer(double montant, String destination) {
-        if (montant <= 0) throw new IllegalArgumentException("Montant doit être positif");
-        if (solde < montant) {
-            throw new IllegalArgumentException("Retrait refusé : solde insuffisant.");
-        }
-        solde -= montant;
-        Retrait r = new Retrait(montant, destination);
-        addOperation(r);
-    }
+    public String getType() { return "RETRAIT"; }
 
     @Override
-    public double calculerInteret() {
-        return solde * tauxInteret;
-    }
-
-    @Override
-    public void afficherDetails() {
-        System.out.println("Compte Epargne - code: " + code + " | solde: " + solde + " | taux: " + tauxInteret);
+    public String toString() {
+        return super.toString() + " destination=" + destination;
     }
 }
