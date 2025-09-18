@@ -5,21 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25032fab-0551-4526-a45a-7b8cfbf7356f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Compte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/CompteCourant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/CompteEpargne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Retrait.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Versement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/service/BankService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/Exceptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/ValidationUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="32pbdyc8sNZq1Drot4slUXJPUb2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,11 +44,18 @@
     "Application.Main.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/youco/IdeaProjects/bankk-managerf-java-bf1/src/Main.java"
+    "onboarding.tips.debug.path": "C:/Users/youco/IdeaProjects/bankk-managerf-java-bf1/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\youco\IdeaProjects\bankk-managerf-java-bf1\test" />
+    </key>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="25032fab-0551-4526-a45a-7b8cfbf7356f" name="Changes" comment="" />
