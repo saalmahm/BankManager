@@ -77,14 +77,26 @@ java Main
 
 ### Menu Principal
 ```
-========== MENU ==========
-1. Créer un compte
-2. Faire un versement
-3. Faire un retrait
-4. Faire un virement
-5. Voir le solde
-6. Voir les opérations
-0. Quitter
+==================================================
+           SYSTEME BANCAIRE
+==================================================
+Bienvenue dans votre gestionnaire de comptes bancaires
+
+
+==================================================
+                    MENU PRINCIPAL
+==================================================
+  [1] Creer un nouveau compte            
+  [2] Effectuer un versement             
+  [3] Effectuer un retrait               
+  [4] Effectuer un virement              
+  [5] Consulter le solde d'un compte     
+  [6] Consulter l'historique des operations
+  [7] Lister tous les comptes            
+------------------------------
+  [0] Quitter l'application              
+==================================================
+Votre choix: 
 ```
 
 ### Exemples d'Utilisation
@@ -150,54 +162,6 @@ Montant: 300.0
 - **Scanner** : Interface console
 - **Try-Catch** : Gestion des exceptions
 - **ValidationUtil** : Couche utilitaire pour les validations
-
-## 📝 Fonctionnalités Techniques
-
-### Héritage et Polymorphisme
-- Classes abstraites `Compte` et `Operation`
-- Implémentation spécifique par type de compte
-- Polymorphisme pour les opérations
-
-### Collections Java
-- `HashMap<String, Compte>` pour la gestion des comptes
-- `ArrayList<Operation>` pour l'historique
-
-### Gestion des Dates
-- Utilisation de `LocalDateTime` et `DateTimeFormatter`
-- Horodatage automatique des opérations
-
-### Gestion des Exceptions
-- Try-catch dans toutes les opérations critiques
-- Validation robuste des entrées utilisateur
-- Messages d'erreur clairs et récupération gracieuse
-- Couche utilitaire pour la validation des données
-
-## 🎯 Règles Métier
-
-### Compte Courant
-- Découvert autorisé configurable
-- Pas de calcul d'intérêts
-- Retrait possible jusqu'à -découvert
-
-### Compte Épargne
-- Taux d'intérêt configurable
-- Calcul automatique des intérêts
-- Retrait uniquement si solde suffisant
-
-### Opérations
-- Identifiant unique (UUID)
-- Horodatage automatique
-- Traçabilité complète (source/destination)
-
-## 🐛 Gestion des Erreurs
-
-- **Validation des formats d'entrée** avec expressions régulières
-- **Vérification des soldes** avant chaque opération
-- **Messages d'erreur explicites** pour guider l'utilisateur
-- **Récupération gracieuse des erreurs** avec try-catch
-- **Validation en temps réel** des codes de compte
-- **Gestion des exceptions** pour les entrées invalides
-- **Couche utilitaire dédiée** pour les validations
 
 ## 📈 Améliorations Possibles
 
