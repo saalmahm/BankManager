@@ -27,20 +27,3 @@ bin/
 
 ### Mac OS ###
 .DS_Store
-
-# Ignorer tous les fichiers compilés .class
-*.class
-
-# Ignorer le dossier de sortie de compilation (comme 'classes/', 'bin/', 'target/')
-classes/
-bin/
-target/
-out/
-
-# Ignorer les fichiers spécifiques aux IDEs
-.idea/
-*.iml
-.vscode/
-
-# Ignorer les fichiers de logs
-*.log
