@@ -2,7 +2,6 @@ package service;
 
 import logic.*;
 import java.util.HashMap;
-import util.ValidationUtil;
 
 public class BankManager {
     private HashMap<String, Compte> comptes;
@@ -13,9 +12,6 @@ public class BankManager {
 
     // Creer un compte courant
     public boolean creerCompteCourant(String code, double decouvert) {
-        if (!ValidationUtil.isValidAccountCode(code)) {
-            return false;
-        }
         if (comptes.containsKey(code)) {
             return false; // Compte existe deja
         }
@@ -25,14 +21,8 @@ public class BankManager {
 
     // Creer un compte épargne
     public boolean creerCompteEpargne(String code, double tauxInteret) {
-        if (!ValidationUtil.isValidAccountCode(code)) {
-            return false;
-        }
         if (comptes.containsKey(code)) {
-            return false;
-        }
-        if (tauxInteret < 0) {
-            return false;
+            return false; // Compte existe deja
         }
         comptes.put(code, new CompteEpargne(code, tauxInteret));
         return true;

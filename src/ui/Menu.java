@@ -70,7 +70,7 @@ public class Menu {
     }
 
     private void creerCompte() {
-        System.out.println("\n--- Créer un compte ---");
+        System.out.println("\n--- Creer un compte ---");
 
         try {
             String code = ValidationUtil.readValidAccountCode(scanner, "Code du compte (CPT-XXXXX): ");
@@ -90,14 +90,7 @@ public class Menu {
                 }
 
             } else if (type == 2) {
-                System.out.print("Taux d interet (ex: 0.05 pour 5%): ");
-                double taux = scanner.nextDouble();
-                scanner.nextLine();
-
-                if (taux < 0) {
-                    System.out.println("Le taux d interet doit etre positif!");
-                    return;
-                }
+                double taux = ValidationUtil.readInterestRate(scanner, "Taux d interet (ex: 0.05 pour 5% ou tapez 5%): ");
 
                 if (bankManager.creerCompteEpargne(code, taux)) {
                     System.out.println("Compte epargne cree avec succes!");
@@ -163,7 +156,7 @@ public class Menu {
         System.out.print("Code du compte destination: ");
         String codeDestination = scanner.nextLine();
 
-        System.out.print("Montant à virer: ");
+        System.out.print("Montant a virer: ");
         double montant = lireMontant();
 
         if (bankManager.faireVirement(codeSource, codeDestination, montant)) {
